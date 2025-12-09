@@ -43,8 +43,34 @@ console.log("Can enter club? " + (isAdult && hasID));
 //! logical not operator returns true if the operand is false
 console.log("Can enter club? " + (isAdult || hasID));
 console.log("Is not adult? " + !isAdult);
-
+//addition
 let age = 10;
 age = age + 10;
 age += 20;
+//subtraction
+let sub = 30;
+sub = sub - 10;
+sub -= 10;
+console.log(sub);
+
+//multiply
 console.log(age);
+let mult = 10;
+mult = mult * 2;
+mult *= 3;
+console.log(mult);
+//division
+let div = 3;
+div = div / 1;
+div /= 2;
+console.log(div);
+//modulus
+let t = 17;
+t = t % 5;
+t %= 5;
+console.log(t);
+// power(exponent)
+let f = 3;
+f = f ** 2;
+f **= 2;
+console.log(f);
