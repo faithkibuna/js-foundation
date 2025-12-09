@@ -43,3 +43,8 @@ console.log("Can enter club? " + (isAdult && hasID));
 //! logical not operator returns true if the operand is false
 console.log("Can enter club? " + (isAdult || hasID));
 console.log("Is not adult? " + !isAdult);
+
+let age = 10;
+age = age + 10;
+age += 20;
+console.log(age);
