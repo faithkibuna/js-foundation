@@ -50,3 +50,7 @@ greet = function () {
 };
 
 greet();
+// anonymous function
+setTimeout(function () {
+  console.log("this is run ");
+}, 2000);

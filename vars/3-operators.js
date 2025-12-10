@@ -38,8 +38,8 @@ let isAdult = true;
 let hasID = false;
 
 console.log("Can enter club? " + (isAdult && hasID));
-// && logical operator returns true if both operands are true
-// || logical orperator returns true if at least one operand is true
+// && logical operator returns true if both operands are true... it returns the first falsy value it encounters and stops evaluating further and returns true if both operands are true
+// || logical orperator returns true if at least one operand is true returns the first truthy value it encounters and stops evaluating further and returns false if both operands are false or if  last operand is falsy
 //! logical not operator returns true if the operand is false
 console.log("Can enter club? " + (isAdult || hasID));
 console.log("Is not adult? " + !isAdult);
@@ -74,3 +74,18 @@ let f = 3;
 f = f ** 2;
 f **= 2;
 console.log(f);
+
+console.log("" && "hello"); // returns "" because "" is falsy that is the first falsy value it encounters
+console.log("" || "hello"); // returns "hello" because "hello" is truthy that is the first truthy value it encounters
+console.log(0 || 7); // returns 7 because 7 is truthy that is the first truthy value it encounters
+console.log(0 && 7); // returns 0 because 0 is falsy that is the first falsy value it encounters
+console.log("hello" && "false" && true); // returns true because all values are truthy it returns the last value
+console.log(0 || "" || null || "false"); // returns "false" because "false" is the first truthy value it encounters
+
+let age1 = 10;
+console.log(age1 >= 18 && age1 <= 35);
+console.log(age1 < 20 || age1 < 60);
+console.log(age1 < 18 && "you are a child");
+console.log(age1 >= 18 && "you are a adult");
+console.log(age1 >= 18 && age1 <= 35 && "you are an among the youth");
+console.log((age1 >= 18 && age1 <= 35) || "you are not  youth");
