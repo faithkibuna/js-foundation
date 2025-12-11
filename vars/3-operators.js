@@ -83,9 +83,9 @@ console.log("hello" && "false" && true); // returns true because all values are 
 console.log(0 || "" || null || "false"); // returns "false" because "false" is the first truthy value it encounters
 
 let age1 = 10;
-console.log(age1 >= 18 && age1 <= 35);
-console.log(age1 < 20 || age1 < 60);
-console.log(age1 < 18 && "you are a child");
-console.log(age1 >= 18 && "you are a adult");
-console.log(age1 >= 18 && age1 <= 35 && "you are an among the youth");
-console.log((age1 >= 18 && age1 <= 35) || "you are not  youth");
+console.log(age1 >= 18 && age1 <= 35); //age1>=18 because its the first falsely value
+console.log(age1 < 20 || age1 < 60); //age1<60is the last truthy value and all are true
+console.log(age1 < 18 && "you are a child"); //you are a child since is the last truthy value and all are true
+console.log(age1 >= 18 && "you are a adult"); //age1>=18 since its the first falsy value
+console.log(age1 >= 18 && age1 <= 35 && "you are an among the youth"); // age >=18 first falsey value
+console.log((age1 >= 18 && age1 <= 35) || "you are not  youth"); // age>=18 first falsey value
