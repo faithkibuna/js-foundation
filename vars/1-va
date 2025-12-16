@@ -22,3 +22,17 @@ function add2(a, b) {
 }
 let sum = add2(4, 6);
 console.log(sum);
+
+// quiz 3
+let num = 7;
+if (num % 2 === 0) {
+  console.log(num + " is even");
+} else {
+  console.log(num + " is odd");
+}
+let num2 = 10;
+if (num2 % 2 === 0) {
+  console.log(num2 + "this is now even");
+} else {
+  console.log(num2 + "this is now odd");
+}
