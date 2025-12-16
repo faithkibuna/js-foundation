@@ -28,7 +28,7 @@ let num = 7;
 if (num % 2 === 0) {
   console.log(num + " is even");
 } else {
-  console.log(num + " is odd");
+  console.log(num + " issodd");
 }
 let num2 = 10;
 if (num2 % 2 === 0) {
@@ -36,3 +36,13 @@ if (num2 % 2 === 0) {
 } else {
   console.log(num2 + "this is now odd");
 }
+function area(length, width) {
+  return length * width;
+}
+let multi = area(4, 5);
+console.log("the area is of the rectangle is " + multi);
+
+function area2(length, width) {
+  console.log("the area of this wall is " + length * width);
+}
+area2(6, 7);
