@@ -1,0 +1,24 @@
+// quiz 1
+function greet(name) {
+  console.log(" hell0 my name is " + name);
+}
+greet("faith");
+
+// using  return
+function greet2(name) {
+  return " hell0 my name is " + name;
+}
+let salamu = greet2("kibuna");
+console.log(salamu);
+
+//quiz 2
+function add(a, b) {
+  console.log(a + b);
+}
+add(3, 5);
+
+function add2(a, b) {
+  return a + b;
+}
+let sum = add2(4, 6);
+console.log(sum);

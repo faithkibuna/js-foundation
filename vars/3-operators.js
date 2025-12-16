@@ -89,3 +89,5 @@ console.log(age1 < 18 && "you are a child"); //you are a child since is the last
 console.log(age1 >= 18 && "you are a adult"); //age1>=18 since its the first falsy value
 console.log(age1 >= 18 && age1 <= 35 && "you are an among the youth"); // age >=18 first falsey value
 console.log((age1 >= 18 && age1 <= 35) || "you are not  youth"); // age>=18 first falsey value
+//not/negation operator(!)
+//double negation operator(!!)
