@@ -36,6 +36,8 @@ if (num2 % 2 === 0) {
 } else {
   console.log(num2 + "this is now odd");
 }
+// quiz 4
+
 function area(length, width) {
   return length * width;
 }
@@ -46,3 +48,24 @@ function area2(length, width) {
   console.log("the area of this wall is " + length * width);
 }
 area2(6, 7);
+
+// quiz 5
+function temperature(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+let results = temperature(1);
+console.log("the temperature iis " + results);
+
+// quiz 6
+function division(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    console.log("fizzbuzz");
+  } else if (number % 3 === 0) {
+    console.log("fizz");
+  } else if (number % 5 === 0) {
+    console.log("buzz");
+  } else {
+    console.log(number);
+  }
+}
+division(15);
