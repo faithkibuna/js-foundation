@@ -1,8 +1,9 @@
 // quiz 1
-function greet(name) {
+function greet(name = "Guest") {
   console.log(" hell0 my name is " + name);
 }
-greet("faith");
+greet();
+greet("starbo");
 
 // using  return
 function greet2(name) {
@@ -17,11 +18,11 @@ function add(a, b) {
 }
 add(3, 5);
 
+let sum = add2(4, 6);
+console.log(sum);
 function add2(a, b) {
   return a + b;
 }
-let sum = add2(4, 6);
-console.log(sum);
 
 // quiz 3
 let num = 7;

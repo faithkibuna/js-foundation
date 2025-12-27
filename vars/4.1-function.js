@@ -1,3 +1,7 @@
+/*function must be declared before it is called code execution starts from the top to bottom 
+a code inside a function is only executed when the function is called/invoked
+*/
+
 function sayhello() {
   console.log("Hello, World!");
 }
@@ -44,13 +48,25 @@ function max(a, b) {
 }
 let mix = max(5, 7);
 console.log(mix);
-//functio expression
-greet = function () {
+//functio expression is a function stored in a  variable it can be anonymous or named in this case its anonymous
+/*greet = function () {
   console.log("hello this is expression");
 };
 
 greet();
-// anonymous function
+// anonymous function this is a fuction without a name its often used inside other function
 setTimeout(function () {
-  console.log("this is run ");
+  console.log("this is run after 2 seconds");
 }, 2000);
+s(function () {
+  console.log("this is run ");
+}, 2000); */
+
+// call back function a function passed as an argument to another function and is executed after some operation is completed
+
+// expression more examples
+const mark = function (a, b) {
+  return a - b;
+};
+let naddy = mark(10, 5);
+console.log(naddy);
