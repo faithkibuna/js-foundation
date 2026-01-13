@@ -36,3 +36,16 @@ switch (day) {
   default: // runs if no matches
     console.log("Other day");
 }
+let boy = 60;
+if (boy >= 3 && boy <= 9) {
+  console.log("lower primary");
+} else if (boy >= 10 && boy <= 13) {
+  console.log("upper primary");
+} else if (boy >= 14 && boy <= 18) {
+  console.log("secondary");
+} else if (boy >= 19 && boy <= 23) {
+  console.log("university");
+} else {
+  console.log("not in 8-4-4");
+}
+// This is a catch-all for any ages not covered by the previous conditions

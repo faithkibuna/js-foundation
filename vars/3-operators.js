@@ -91,3 +91,10 @@ console.log(age1 >= 18 && age1 <= 35 && "you are an among the youth"); // age >=
 console.log((age1 >= 18 && age1 <= 35) || "you are not  youth"); // age>=18 first falsey value
 //not/negation operator(!)
 //double negation operator(!!)
+
+let lowerlimit = 18;
+let upperlimit = 35;
+let agea = 24;
+if (agea >= lowerlimit && agea <= upperlimit) {
+  console.log("Age is within the range");
+}
