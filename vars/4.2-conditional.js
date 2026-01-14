@@ -48,4 +48,21 @@ if (boy >= 3 && boy <= 9) {
 } else {
   console.log("not in 8-4-4");
 }
-// This is a catch-all for any ages not covered by the previous conditions
+// using switch
+let boy2 = 19;
+switch (true) {
+  case boy2 >= 3 && boy2 <= 9:
+    console.log("lower primary");
+    break;
+  case boy2 >= 10 && boy2 <= 13:
+    console.log("upper primary");
+    break;
+  case boy2 >= 14 && boy2 <= 18:
+    console.log("secondary");
+    break;
+  case boy2 >= 19 && boy2 <= 23:
+    console.log("university");
+    break;
+  default:
+    console.log("not in 8-4-4");
+}
