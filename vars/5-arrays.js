@@ -11,7 +11,7 @@ console.log(fruits[2]);
 
 // the 10 most common array methods know what methodes does,what it returns,whethere it mutative or non-mutative -mutate is to change the original array
 // 1. push() - adds an element to the end of the array (mutative) it returns the new length of the array
-fruits.push("grape apples me");
+fruits.push("grape", "keke", "mango");
 console.log(fruits);
 // 2. pop() - removes the last element from the array (mutative) it returns the removed element it only removes the last element that is added by push() and not any other element
 let bye = fruits.pop();
@@ -31,7 +31,8 @@ console.log(fruits);
 let deno = fruits.slice(2, 4);
 console.log(deno);
 console.log(fruits);
-// 7. forEach() - executes a function for each element in the array (non-mutative) it returns undefined
+// 7. forEach() - executes a function for each element in the array (n
+// on-mutative) it returns undefined
 // 8. map() - creates a new array with the results of calling a function for each element (non-mutative) it returns the new array
 // 9. filter() - creates a new array with all elements that pass the test (non-mutative) it returns the new array
 // 10. reduce() - executes a function for each element and returns a single value (non-mutative) it returns the final value
