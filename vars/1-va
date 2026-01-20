@@ -93,3 +93,41 @@ function leapYear(year) {
 }
 leapYear(2020);
 leapYear(1700);
+// using arrays and loops exaple
+let marks = [1, 2, 3, 4];
+for (let i = 0; i < marks.length; i++) {
+  console.log(i + 1 + "." + marks[i]);
+}
+// arrays and loops example using while
+
+let names = [20, 24, 24];
+let i = 0;
+while (i < names.length) {
+  console.log(i + 1 + "." + names[i]);
+  i++;
+}
+// using do.while loop
+let colors = ["red", "blue", "green"];
+let j = 1;
+do {
+  console.log(j + 1 + "." + colors[j]);
+  j++;
+} while (j < colors.length);
+//array and conditional example
+let ages = [15, 22, 18, 30];
+for (let k = 0; k < ages.length; k++)
+  if (ages[k] >= 18) {
+    console.log(k + 1 + ". " + ages[k] + " is an adult.");
+  } else {
+    console.log(k + 1 + ". " + ages[k] + " is a minor.");
+  }
+let yours = [
+  { name: "faith kibuna", age: 18 },
+  { name: "john doe", age: 22 },
+  { name: "jane smith", age: 17 },
+];
+if (yours[0].age >= 18) {
+  console.log(yours[0].name + " is an adult.");
+} else {
+  console.log(yours[0].name + " is a minor.");
+}
