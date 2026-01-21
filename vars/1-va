@@ -121,7 +121,9 @@ for (let k = 0; k < ages.length; k++)
   } else {
     console.log(k + 1 + ". " + ages[k] + " is a minor.");
   }
+
 let yours = [
+  //we used an array of objects to store names and ages we can access put each object in its own block so that we can easily manage and use the data
   { name: "faith kibuna", age: 18 },
   { name: "john doe", age: 22 },
   { name: "jane smith", age: 17 },
@@ -131,3 +133,18 @@ if (yours[0].age >= 18) {
 } else {
   console.log(yours[0].name + " is a minor.");
 }
+
+// exersise
+let price = [190, 100, 200, 500, 300, 400];
+let highest = price[0];
+let lowest = price[0];
+for (let i = 1; i < price.length; i++) {
+  if (price[i] > highest) {
+    highest = price[i];
+  }
+  if (price[i] < lowest) {
+    lowest = price[i];
+  }
+}
+console.log("the highest price is " + highest);
+console.log("the lowest price is " + lowest);
