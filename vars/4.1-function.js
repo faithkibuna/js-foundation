@@ -70,3 +70,21 @@ const mark = function (a, b) {
 };
 let naddy = mark(10, 5);
 console.log(naddy);
+/* in expression it offers higher flexibility and can be easily passed around as values 
+ we have callback functions that are often used in asynchronous programming and event handling
+  callback functions are essential for handling events like button clicks, API responses, and more
+  they allow us to execute code after a certain task is completed, making our programs more efficient and responsive
+  Closure is another important concept in JavaScript, allowing functions to remember their lexical scope even when executed outside that scope.
+  This is particularly useful for creating private variables and functions.
+  Closures are created every time a function is defined, and they can be used to encapsulate data and provide access to it through privileged methods.
+  arrow functions are a more concise way to write function expressions in JavaScript. They allow us to create functions without the need for the function keyword, making our code cleaner and more readable.
+  we use => to define an arrow function, and the syntax is as follows:
+
+  const functionName = (parameters) => {
+
+  };
+immediatelyInvokedFunction();
+this is an immediately invoked function expression (IIFE)
+
+ */
+

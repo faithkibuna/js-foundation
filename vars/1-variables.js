@@ -5,9 +5,12 @@ var- is used to declare variables but its usage is discouraged in modern javascr
 */
 
 //example of let and const
-let age = 25; //this  is a variable declaration without initialization
-//age = 23; this is variable initialization
-//age = 25; this is variable reassignment
-//age = age + 10; this is another way of reassigning a variable
+let age; //this  is a variable declaration without initialization
+age = 23; //this is variable initialization
+age = 25; //this is variable reassignment
+age = age + 10; //this is another way of reassigning a variable
 
 console.log("i am " + age + " years old");
+
+const birthYear = 1998; //this is a constant variable declaration and initialization
+// birthYear = 2000; //this will throw an error because we cannot reassign a constant variable

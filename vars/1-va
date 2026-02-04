@@ -135,11 +135,13 @@ if (yours[0].age >= 18) {
 }
 
 // exersise
-let price = [190, 100, 200, 500, 300, 400];
-let highest = price[0];
+let price = [190, 100, 200, 500, 300, 400]; // the value in .arrays are numbers
+let highest = price[0]; // this is to initialize the value
 let lowest = price[0];
 for (let i = 1; i < price.length; i++) {
+  //checking the loop condition if its true
   if (price[i] > highest) {
+    //checking if the current value is greater than the highest
     highest = price[i];
   }
   if (price[i] < lowest) {
@@ -148,3 +150,31 @@ for (let i = 1; i < price.length; i++) {
 }
 console.log("the highest price is " + highest);
 console.log("the lowest price is " + lowest);
+
+const price1 = [12, 45, 780, 7, 2];
+
+console.log("Original array:", price1); //we print to show how the data looks  before sorting, help compare before and after.
+
+for (let i = 0; i < price1.length; i++) {
+  // outer loop,
+  for (let j = i + 1; j < price1.length; j++) {
+    // inner loop now we compare the number after it the loop search the number bigger than it
+    if (price1[i] < price1[j]) {
+      // is the number at position j biggger than position i if yes swap them
+      // Swap
+      let temp = price1[i]; // we use temp for temporary storage box
+      price1[i] = price1[j];
+      price1[j] = temp;
+
+      // Print after each swap
+      console.log(`After swapping ${price1[j]} and ${price1[i]}:`, price1);
+    }
+  }
+}
+
+console.log("final:", price1);
+/*given an array of prices x and z find the prices that fall within tha range eg x=[20,400.7,50,77,1000]
+y=40
+z=100
+
+*/

@@ -23,3 +23,13 @@ console.log(
     largeNumber +
     " years ago"
 );
+
+// boolean datatype is used to represent two values: true or false
+/*boolean example
+not equal to operator (!=) returns true if the values are not equal
+equal to operator (==) returns true if the values are equal
+greater than operator (>) returns true if the left value is greater than the right value
+
+a variable without any value is considered undefined
+an empty value is considered null ...has nothing to do with undefined
+*/
